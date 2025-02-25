@@ -12,8 +12,8 @@ This project is an Ansible playbook that automates the initial setup of a Window
 ## ⚙️ How to Use  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/Ghi5lo/SystemAdmin-Tools/Ansible-ServerAutomations.git
-   cd Ansible-ServerAutomations
+   git clone https://github.com/Ghi5lo/SystemAdmin-Tools.git
+   cd SystemAdmin-Tools
 2. Edit inventory.ini with your Windows server's IP
 
 3. Ensure WinRM is enabled on the server
