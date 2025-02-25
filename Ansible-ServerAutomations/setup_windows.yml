@@ -1,0 +1,36 @@
+---
+- name: Setup Windows Server
+  hosts: windows
+  gather_facts: no
+  tasks:
+
+    - name: Create an administrative user
+      win_user:
+        name: sysadmin
+        password: "SUPERsecure123"
+        groups: Administrators
+        state: present
+
+    - name: Install essential software
+      win_chocolatey:
+        name:
+          - notepadplusplus
+          - 7zip
+          - googlechrome
+          - git
+        state: present
+
+    - name: Configure firewall to allow RDP
+      win_firewall_rule:
+        name: "Allow RDP"
+        localport: 3389
+        action: allow
+        direction: in
+        protocol: TCP
+        enable: yes
+
+    - name: Ensure Windows Defender is running
+      win_service:
+        name: WinDefend
+        state: started
+        enabled: yes
