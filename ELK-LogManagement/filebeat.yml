@@ -1,0 +1,6 @@
+filebeat.inputs:
+  - type: log
+    paths:
+      - C:\Windows\System32\winevt\Logs\Application.evtx
+output.logstash:
+  hosts: ["<Server-IP>:5044"]
