@@ -4,4 +4,6 @@ This repository contains tools I developed to streamline system administration t
 
 ## Features
 
-⚙️ Automation Scripts using Ansible
+⚙️ Automation Scripts using **Ansible**
+
+⚙️ Log Management using the **ELK stack**
