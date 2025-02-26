@@ -61,7 +61,7 @@ Once running, open your browser and go to:
 http://<Server-IP>:5601
 ```
 
-### 6️⃣ Configure Filebeat (Log Forwarder)
+### 6️⃣ Configure Filebeat (Log Forwarder) on the Server
 1. Download Filebeat from [Elastic](https://www.elastic.co/downloads/beats/filebeat)
 2. Edit `filebeat.yml`:
 ```yaml
